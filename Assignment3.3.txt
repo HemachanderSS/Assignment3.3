@@ -1,0 +1,51 @@
+1.Components of hadoop 2.X:
+	The problem that arises in hadoop 1.x is single point of failure, whenever the 
+name node gets fail there will not be any solution to access the data node.The secondary node
+will not acts as name node,so the hadoop 2.x come across the solution by having multiple
+name node so that there will not be any single point of failure.
+	
+	Components are
+	*YARN
+	*HDFS and
+	*Map Reduce.
+	
+	*YARN:Yet Another Resource Negotiator
+		It is framework responsible for providing the computational resources (i.e)
+cpu,memory which are needed for application executions.
+		Two important elements are:
+			1.Resource Manager and
+			2.Node Manager.
+		1.Resource Manager: 
+			*It slaves are located and how many resources they have.
+			*It runs several services, the most important is the resource 
+scheduler which decides how to assign the resources.
+		2.Node Manager:
+			*When it starts, it announces itself as a resource manager. Periodically
+it sends an heartbeat to the resource manager.
+			*Each node manager offers some resources to the cluster and it resource 
+capacity is the amount of memory and the number of vcores.
+			*The resource manager decides how to use this capacity.
+	
+	*HFDS:
+		*Hadoop Distributed File System.
+	*The file stored in HDFS provides scalable,fault-tolerant storage at low-cost.
+	*The HDFS software detects and compensates for hardware issues,including disk 
+problems and server failure.
+	*HDFS stores files across the collection of serverin a cluster.
+	*Files are decomposed into blocks and each block is written to more than one of 
+the servers.
+	*HDFS makes applications available for parallel processing.
+	*Features of HDFS
+		1.It is suitable for the distributed storage and processing.
+		2.Hadoop provides a command interface to interact with HDFS.
+		3.The built-in servers of namenode and datanode helps users to easily check
+the status of cluster.
+		4.Streaming access to file system data.
+		5.HDFS provides file permissions and authenication.
+	
+
+	*MapReduce:
+				* Mapreduce is a prcessing part.
+		*It splits the input data into independent chunks which are processed,sorted
+and combined . 
+		
